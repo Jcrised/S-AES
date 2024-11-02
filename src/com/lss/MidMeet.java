@@ -28,7 +28,7 @@ public class MidMeet extends JFrame {
 
         //UI标题
         title = new JLabel("中间相遇模式");
-        title.setBounds(90, 30, 220, 40);
+        title.setBounds(150, 75, 300, 40);
         title.setFont(new Font("楷体", Font.BOLD, 35));
         title.setForeground(Color.blue);
         title.setHorizontalAlignment(SwingConstants.CENTER);
@@ -36,7 +36,7 @@ public class MidMeet extends JFrame {
 
         //输入明文
         lab_txt = new JLabel("输入明文：");
-        lab_txt.setBounds(80, 80, 100, 30);
+        lab_txt.setBounds(65, 160, 95, 30);
         lab_txt.setFont(new Font("宋体", Font.BOLD, 18));
         lab_txt.setForeground(Color.gray);
         lab_txt.setHorizontalAlignment(SwingConstants.LEFT);
@@ -44,29 +44,29 @@ public class MidMeet extends JFrame {
 
         //明文输入框
         JT_txt = new JTextField();
-        JT_txt.setBounds(190, 80, 130, 30);
+        JT_txt.setBounds(160, 160, 120, 30);
         JT_txt.setFont(new Font("宋体", Font.BOLD, 12));
         JT_txt.setHorizontalAlignment(SwingConstants.LEFT);
         Mmt.add(JT_txt);
 
-        //输入密钥
+        //输入密文
         lab_sec = new JLabel("输入密文：");
-        lab_sec.setBounds(80, 115, 100, 30);
+        lab_sec.setBounds(310, 160, 95, 30);
         lab_sec.setFont(new Font("宋体", Font.BOLD, 18));
         lab_sec.setForeground(Color.gray);
         lab_sec.setHorizontalAlignment(SwingConstants.LEFT);
         Mmt.add(lab_sec);
 
-        //密钥输入框
+        //密文输入框
         JT_sec = new JTextField();
-        JT_sec.setBounds(190, 115, 130, 30);
+        JT_sec.setBounds(405, 160, 120, 30);
         JT_sec.setFont(new Font("宋体", Font.BOLD, 12));
         JT_sec.setHorizontalAlignment(SwingConstants.LEFT);
         Mmt.add(JT_sec);
 
         //明文、密钥存储
         lab_show = new JLabel("明密存储：");
-        lab_show.setBounds(80, 150, 100, 30);
+        lab_show.setBounds(310, 210, 95, 30);
         lab_show.setFont(new Font("宋体", Font.BOLD, 18));
         lab_show.setForeground(Color.gray);
         lab_show.setHorizontalAlignment(SwingConstants.LEFT);
@@ -76,15 +76,15 @@ public class MidMeet extends JFrame {
         Jt_res=new JTextArea();
         JT_show=new JTextArea();
         JT_show.setEditable(false);
-        JT_show.setBounds(190,150,130,100);
+        JT_show.setBounds(310,250,215,180);
         JT_show.setFont(new Font("宋体",Font.BOLD,12));
         Mmt.add(JT_show);
 
 
         //点击存储
         show = new JButton("存储");
-        show.setBounds(80,230,80,20);
-        show.setFont(new Font("宋体",Font.BOLD,15));
+        show.setBounds(445,210,80,30);
+        show.setFont(new Font("黑体",Font.BOLD,20));
         show.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -108,11 +108,9 @@ public class MidMeet extends JFrame {
         });
         Mmt.add(show);
 
-
-
         //破解结果
         lab_out = new JLabel("破解：");
-        lab_out.setBounds(80, 330, 100, 30);
+        lab_out.setBounds(65, 210, 95, 30);
         lab_out.setFont(new Font("宋体", Font.BOLD, 18));
         lab_out.setForeground(Color.gray);
         lab_out.setHorizontalAlignment(SwingConstants.LEFT);
@@ -120,13 +118,13 @@ public class MidMeet extends JFrame {
 
         //解密结果展示
         JT_out = new JTextArea();
-        JT_out.setBounds(190, 330, 130, 30);
+        JT_out.setBounds(65, 250, 215, 180);
         JT_out.setFont(new Font("宋体", Font.BOLD, 12));
         Mmt.add(JT_out);
 
         //破解按钮
         sure = new JButton("破解");
-        sure.setBounds(150, 370, 100, 30);
+        sure.setBounds(200, 210, 80, 30);
         sure.setFont(new Font("黑体", Font.BOLD, 20));
         sure.setHorizontalAlignment(SwingConstants.CENTER);
         sure.addActionListener(new ActionListener() {
@@ -163,12 +161,9 @@ public class MidMeet extends JFrame {
         });
       Mmt.add(sure);
 
-
-
-
         //返回主页面
         back = new JButton("返回");
-        back.setBounds(210, 410, 110, 30);
+        back.setBounds(310, 450, 100, 30);
         back.setFont(new Font("黑体", Font.BOLD, 20));
         back.setHorizontalAlignment(SwingConstants.CENTER);
         back.addActionListener(new ActionListener() {
@@ -182,7 +177,7 @@ public class MidMeet extends JFrame {
 
         //退出系统
         out = new JButton("退出");
-        out.setBounds(80, 410, 110, 30);
+        out.setBounds(180, 450, 100, 30);
         out.setFont(new Font("黑体", Font.BOLD, 20));
         out.setHorizontalAlignment(SwingConstants.CENTER);
         out.addActionListener(new ActionListener() {
@@ -194,7 +189,7 @@ public class MidMeet extends JFrame {
         Mmt.add(out);
 
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        setBounds(450, 150, 400, 500);
+        setBounds(350, 100, 600, 600);
         setVisible(true);
 
 
